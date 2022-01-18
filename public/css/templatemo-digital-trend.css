@@ -33,7 +33,7 @@ https://templatemo.com/tm-538-digital-trend
   :root {
     --primary-color:        #057a8d;
     /* --primary-color: #df9149; */
-    --secondary-color:      #f19011;
+    --secondary-color:      #e08309;
     --white-color:          #ffffff;
     --dark-color:           #171819;
     --project-bg:           #f0f8ff;
@@ -55,7 +55,7 @@ https://templatemo.com/tm-538-digital-trend
     --h3-font-size:         24px;
     --p-font-size:          18px;
     --base-font-size:       16px;
-    --menu-font-size:       14px;
+    --menu-font-size:       17px;
 
     --border-radius-large:  100px;
     --border-radius-small:  5px;
@@ -64,6 +64,7 @@ https://templatemo.com/tm-538-digital-trend
   body {
     background: var(--white-color);
     font-family: var(--base-font-family);
+    /* overflow-x: hidden; */
   }
 
 
@@ -93,11 +94,11 @@ https://templatemo.com/tm-538-digital-trend
   }
 
   h4 {
-    color: var(--gray-color);
+    color: black;
     font-family: var(--base-font-family);
-    font-size: var(--p-font-size);
+    font-size: 25px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /* text-transform: lowercase; */
   }
 
   p {
@@ -110,6 +111,7 @@ https://templatemo.com/tm-538-digital-trend
   strong {
     letter-spacing: 0;
     color: var(--secondary-color);
+    /* font-weight: 100;s */
   }
 
 
@@ -248,8 +250,8 @@ https://templatemo.com/tm-538-digital-trend
     color: var(--white-color);
     font-size: var(--menu-font-size);
     letter-spacing: 0.4px;
-    margin: 0 1.6em;
-    padding: 0.6em;
+    margin: 0 1.4em;
+    padding: 0.4em;
   }
 
   .nav-link.active,
@@ -537,6 +539,7 @@ https://templatemo.com/tm-538-digital-trend
   .blog-sidebar h3 {
     font-size: 18px;
   }
+ 
 
 
 
@@ -636,9 +639,13 @@ https://templatemo.com/tm-538-digital-trend
   -----------------------------------------*/
 
   @media screen and (max-width: 360px) {
-    .logo{
-      height: 15px;
-      width: 15px;
+    .logo1{
+      height: 60px;
+      width: auto;
+    }
+    .logo2{
+      height: 50px;
+      width: auto;
     }
     .container a{
       font-size: 1rem;
@@ -646,13 +653,108 @@ https://templatemo.com/tm-538-digital-trend
     .hero-text h1{
   font-size: 20px;
     }
+    .testimonial .container .row img{
+      padding-top: 1rem;
+      max-width: 250px;
+      margin: 0;
+      align-items: center;
+
+    }
+    #addwartise{
+      font-size: 3rem;
+    }
+    #small{
+      font-size: 1.5rem;
+    }
+    .hero-image{
+      position: relative;
+      /* bottom: 50px; */
+      top: 0em;
+      /* bottom: 3em; */
+    }
+    #about-text{
+      margin: 0.5rem;
+
+    }
+    #sponsor1{
+      width: 28rem;
+      position: relative;
+      left: 28px;
+    }
+    #sponsor2{
+      width: 27rem;
+      position: relative;
+      left: 25px;
+      margin-bottom: 15px;
+    }
+    #sponsor3{
+      width: 27rem;
+      position: relative;
+      left: 25px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    #sponsor4{
+      width: 27rem;
+      position: relative;
+      left: 25px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    #navbarNav{
+      padding-top: 25px;
+    }
     
   }
 
   @media screen and (min-width: 1200px) {
+    .logo1{
+      height: 80px;
+      width: auto;
+    }
+    .logo2{
+      height: 65px;
+      width: auto;
+    }
 
     .about-info h2 {
-      max-width: 70%;
+      max-width: 100%;
+    }
+    #addwartise{
+      font-size: 6rem;
+    }
+    #about-text{
+      margin: 3rem 4rem;
+    }
+    #sponsor1{
+      position: relative;
+      width: 28rem;
+      /* align-items: center;
+      align-self: center;
+      align-content: center; */
+      
+    }
+    #sponsor2{
+      width: 27rem;
+       align-items: center; 
+       padding-top: 5rem;
+        margin-left: 4.5rem;
+    }
+    #sponsor3{
+      width: 25rem;
+       padding-top: 6rem;
+        margin-left: 4.5rem;
+    }
+    #sponsor4{
+      width: 25rem;
+       padding-top: 6rem;
+        margin-left: 4.5rem;
+    }
+    #hunt{
+      font-size: 4.5rem;
+    }
+    #small{
+      font-size: 2rem;
     }
   }
 

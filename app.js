@@ -15,8 +15,8 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const mongoSanitize = require('express-mongo-sanitize');
 const userRoutes = require('./routes/users');
-const campgroundRoutes = require('./routes/campgrounds');
-const reviewRoutes = require('./routes/reviews');
+// const campgroundRoutes = require('./routes/campgrounds');
+// const reviewRoutes = require('./routes/reviews');
 const Answer = require('./models/add');
 const catchAsync = require('./utils/catchAsync');
 const MongoDBStore = require("connect-mongo")(session);
@@ -101,13 +101,21 @@ app.use('/', userRoutes);
 // app.get('/', (req, res) => {
 //     res.render('home')
 // });
-app.get('/add',(req,res)=>{
+app.get('/',(req,res)=>{
+    console.log(Date.now())
     res.render('addwartise/addwartise')
+    
 });
-app.get('/add/answer',isLoggedIn, (req,res)=>{
-    res.render('addwartise/huntdown');
-})
-app.post('/add/answer',isLoggedIn,catchAsync(async(req,res)=>{
+app.get('/answer',isLoggedIn, (req,res)=>{
+    if(Date.now()>( 1640563200000 +(23*24*60*60*1000))){
+        const teamname = req.user.teamName
+        res.render('addwartise/huntdown',{ teamname });
+    }
+    else{
+        res.render('error2');
+    }
+    })
+app.post('/answer',isLoggedIn,catchAsync(async(req,res)=>{
    console.log(req.body);
    const answer = new Answer;
    for(i=0;i<15;i++){
@@ -121,7 +129,7 @@ app.post('/add/answer',isLoggedIn,catchAsync(async(req,res)=>{
     // check.author = req.user._id;
     // check.endTime= Date.now();
     await answer.save();
-    res.redirect('/add');
+    res.redirect('/logout');
 }))
 
 // app.get('/', (req, res) => {

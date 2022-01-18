@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Digital Trend Contact</title>
+    <title>Register</title>
     <!--
 
 DIGITAL TREND
@@ -31,14 +31,15 @@ https://templatemo.com/tm-538-digital-trend
   <body>
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg position-absolute">
+      <img class="logo1" src="./images/bitlogo.png" alt="">
       <img
-        class="logo"
+        class="logo2"
         src="./images/Clogo.png"
-        style="height: 60px; width: 60px"
+        
         alt=""
       />
       <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="#">
           <!-- <i class="fa fa-line-chart"></i> -->
           Model Club
         </a>
@@ -58,10 +59,10 @@ https://templatemo.com/tm-538-digital-trend
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="/add" class="nav-link">Home</a>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/add#about" class="nav-link">About</a>
+              <a href="/#about" class="nav-link">About</a>
             </li>
             <!-- <li class="nav-item">
                         <a href="blog.html" class="nav-link">Blog</a>
@@ -73,8 +74,16 @@ https://templatemo.com/tm-538-digital-trend
         </div>
       </div>
     </nav>
-    <%- include('../partials/flash')%>
+    <% if(error && error.length) {%>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <%= error %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <% } %>
     <!-- CONTACT -->
+    <%- include('../partials/flash') %>
     <section class="contact section-padding">
       <div class="container">
         <div class="row">
@@ -108,7 +117,7 @@ https://templatemo.com/tm-538-digital-trend
                     type="text"
                     class="form-control"
                     name="username"
-                    placeholder="UserName"
+                    placeholder="Leadername_Teamname"
                   />
                   <div class="valid-feedback">
                     Looks good!

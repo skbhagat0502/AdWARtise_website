@@ -16,15 +16,16 @@ https://templatemo.com/tm-538-digital-trend
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
 
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/aos.css">
-  <link rel="stylesheet" href="../css/owl.carousel.min.css">
-  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <!-- MAIN CSS -->
-  <link rel="stylesheet" href="../css/templatemo-digital-trend.css">
-  <link rel="stylesheet" href="../css/hunt.css">
+  <link rel="stylesheet" href="./css/templatemo-digital-trend.css">
+  <link rel="stylesheet" href="./css/hunt.css">
 
 </head>
 
@@ -32,7 +33,8 @@ https://templatemo.com/tm-538-digital-trend
 
   <!-- MENU BAR -->
   <nav class="navbar navbar-expand-lg position-absolute">
-    <img class="logo" src="../images/Clogo.png" style="height: 60px; width: 60px;" alt="">
+    <img class="logo1" src="../images/bitlogo.png" alt="">
+    <img class="logo2" src="../images/Clogo.png" alt="">
     <div class="container">
       <a class="navbar-brand" href="#">
         <!-- <i class="fa fa-line-chart"></i> -->
@@ -47,14 +49,14 @@ https://templatemo.com/tm-538-digital-trend
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="/add" class="nav-link">Home</a>
+            <a href="/" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="/add#about" class="nav-link">About</a>
+            <a href="/#about" class="nav-link">About</a>
           </li>
-          <!-- <li class="nav-item">
-            <a href="blog.html" class="nav-link active">Blog</a>
-          </li> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link contact"><%= teamname %></a>
+       </li>
           <!-- <li class="nav-item">
             <a href="contact.html" class="nav-link contact">Contact</a>
           </li> -->
@@ -72,7 +74,7 @@ https://templatemo.com/tm-538-digital-trend
 
         <div class="col-lg-12 col-12 py-5 mt-5 mb-3 text-center">
 
-          <h1 class="mb-4" style="font-size: 4rem;" data-aos="fade-up">HUNT<span style="color: #f19011;">DOWN</span>
+          <h1 class="mb-4" id="hunt" data-aos="fade-up">Hunt-<span style="color: #f19011;">Down</span>
           </h1>
           <!-- <h2 class="mb-4" data-aos="fade-up">Hunt-Down</h2> -->
         </div>
@@ -91,37 +93,38 @@ https://templatemo.com/tm-538-digital-trend
 
         </div>
 
-        <div class="col-lg-5 col-md-5 col-12 mb-4">
-          <div class="blog-sidebar d-flex justify-content-center align-items-center" data-aos="fade-up"
+        <div class="col-lg-6 col-md-5 col-12 mb-4">
+          <h2>Rules for this round-</h2>
+          <div class="blog-sidebar d-flex py-4" data-aos="fade-up"
             data-aos-delay="200">
             <!-- <img src="images/blog/blog-sidebar-image.jpg" class="img-fluid" alt="blog"> -->
 
             <div class="blog-info">
-              <h4 class="blog-category text-danger">Design</h4>
+              <h4 class="blog-category">1.  This section contains 15 questions.</h4>
 
-              <h3><a href="blog-detail.html">Why Truly Accessible Design Benefits Everyone</a></h3>
+            
             </div>
           </div>
 
           <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos="fade-up"
-            data-aos-delay="300">
+            data-aos-delay="150">
             <!-- <img src="images/blog/blog-sidebar-image01.jpg" class="img-fluid" alt="blog"> -->
 
             <div class="blog-info">
-              <h4 class="blog-category text-success">lifestyle</h4>
+              <h4 class="blog-category">2.  A total of one hour will be provided to submit the answers.</h4>
 
-              <h3><a href="blog-detail.html">Be Humble About What You Know</a></h3>
+              <!-- <h3><a href="blog-detail.html">Be Humble About What You Know</a></h3> -->
             </div>
           </div>
 
-          <div class="blog-sidebar d-flex justify-content-center align-items-center" data-aos="fade-up"
-            data-aos-delay="200">
+          <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos="fade-up"
+            data-aos-delay="150">
             <!-- <img src="images/blog/blog-sidebar-image02.jpg" class="img-fluid" alt="blog"> -->
 
             <div class="blog-info">
-              <h4 class="blog-category text-primary">Coding</h4>
+              <h4 class="blog-category">3.  Hover over the cards to answer the questions.</h4>
 
-              <h3><a href="blog-detail.html">The Mistakes I Made As a Coding Beginner</a></h3>
+              <!-- <h3><a href="blog-detail.html">The Mistakes I Made As a Coding Beginner</a></h3> -->
             </div>
           </div>
 
@@ -158,9 +161,9 @@ https://templatemo.com/tm-538-digital-trend
       </div>
     </div>
   </section>
-<h1 style="text-align: center;">LET IT BEGIN!</h1>
+<h1 style="text-align: center;">BUCKLE UP!</h1>
   <section>
-    <form action="/add/answer" method="post">
+    <form action="/answer" method="post">
     <div class="cards">
 
 
@@ -172,33 +175,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 01</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/4.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>This is a beverage company. Initially, it was sold at the pharmacies as a fountain drink. It was also one of the associate sponsors of Delhi Daredevils in the year 2008.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[0]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[0]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -207,33 +207,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 02</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/2.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>BBK electronics has been the parent company of this brand. The founder of NOTHING is also the co-founder of this brand.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[1]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[1]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -242,33 +239,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 03</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/3.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                 
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>This brand is known for its unique advertisements which entertained everyone during the pandemic. It is a credit card bill payment platform that rewards its members for clearing their credit card bills on time.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[2]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[2]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -280,33 +274,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 04</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/2.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>This brand shares its name with the name of the home planet of the famous villain “THANOS” from the MARVEL franchise.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[3]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[3]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -315,33 +306,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 05</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/4.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>Two famous brands come from the same family in Germany. Originally known as RUDA, its present name is the same as the common name of the species COUGAR.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[4]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[4]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -350,33 +338,26 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 06</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/3.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>This brand was originally started as a competitor to “BLOCKBUSTER VIDEO” as a home delivery service for cassettes and CDs.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[5]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[5]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                
                 </div>
               </div>
             </div>
@@ -386,33 +367,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 07</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/4.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                 
+                  <h3>This is a popular social media app which is used by people to share their opinions publicly. This brand has recently appointed a new CEO of Indian origin.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[6]" placeholder="   your answer here">
+                  <br> -->
+                 
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[6]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -421,33 +399,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 08</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/2.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>This brand was the title sponsor of the Indian Premier league for the 2020 edition. Its tagline is "Team hai to maza hai".</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[7]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[7]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -456,33 +431,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 09</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/3.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                   
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>The brand name comes from the Sanskrit term 'Nayaka,' which means 'one who is in the spotlight.' It is one of the leading brands in women's fashion.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[8]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[8]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -491,33 +463,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 10</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/3.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                 
+                  <h3>Initially called as FOODIEBAY, recently it had a great response for its Initial Public Offering (IPO). Name the brand.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[9]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[9]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -526,33 +495,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 11</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/2.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>The brand is a Swedish audio streaming and media services providing company, found in the year 2006. It is infamous for its irritating advertisements.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[10]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[10]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -561,33 +527,31 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 12</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/4.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>Guess the brand from the logo.</h3>
+                  <img src="../images/nestle.jpg" style="width: 180px; margin-top: 8px;" alt="">
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[11]" placeholder="   your answer here">
+                  <br> -->
+                 
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[11]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -596,33 +560,31 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 13</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                  src="../images/2.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  <!-- <h2>Neymar</h2> -->
+                 
+                  <h3>This brand composed a song named as "Chalta rahe" for boosting its sales. Name the brand.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[12]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[12]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -631,33 +593,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 14</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                    src="../images/4.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                  
+                  <h3>This brand was founded as a proprietary trading firm in 2008 and was formerly known as RKSV Securities.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[13]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[13]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -666,33 +625,30 @@ https://templatemo.com/tm-538-digital-trend
             <div class="card">
               <div class="content">
                 <div class="front">
+                  <h2>Question 15</h2>
                   <img class="profile" width="100%"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/neymar2.jpg?raw=true"
+                  src="../images/3.jpg"
                     alt="Neymar">
-                  <h2>Neymar</h2>
+                  
                 </div>
                 <div class="back from-left">
-                  <h2>Neymar</h2>
-                  <h3>10</h3>
-                  <h3>PSG | BRA</h3>
-                  <img class="tem-img"
+                 
+                  <h3>The first Indian telecom service provider to achieve CISCO gold certification. It is the third largest mobile operator in the world by subscriber base and has commercial presence in 17 countries. Name the brand.</h3>
+                  <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br>
-                  <p class="des">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit
-                    debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                  </p>
-                  <div>
-                    <input type="text" name="answer[14]" placeholder="   your answer here">
+                  <br> -->
+                  
+                  <div style="margin-top: 2rem;">
+                    <input type="text" name="answer[14]" placeholder="Type Answer" style="border: 4px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
                   </div>
-                  <ul class="social-icon">
+                  <!-- <ul class="social-icon">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -762,7 +718,7 @@ https://templatemo.com/tm-538-digital-trend
      
       <!-- <a target="_blank" href="https://insidethediv.com">Find Me</a> -->
     </div>
-    <div class="col-lg-5 mx-auto col-7">
+    <div class="col-lg-3 mx-auto col-7">
       <button
         type="submit"
         class="form-control btn btn-primary mb-3 mt-4"
@@ -823,11 +779,11 @@ https://templatemo.com/tm-538-digital-trend
   </script>
 
   <!-- SCRIPTS -->
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/aos.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/custom.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/aos.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/custom.js"></script>
   <script>
     const clearer = document.querySelector('#submit-button')
     const time = document.querySelector('#time');
