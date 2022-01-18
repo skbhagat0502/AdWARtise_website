@@ -107,7 +107,7 @@ app.get('/',(req,res)=>{
     
 });
 app.get('/answer',isLoggedIn, (req,res)=>{
-    if(Date.now()>( 1640563200000 +(23*24*60*60*1000)+(6.5*60*60*1000))){
+    if(Date.now()>( 1640563200000 +(27*24*60*60*1000)+(6.5*60*60*1000))){
         const teamname = req.user.teamName
         res.render('addwartise/huntdown',{ teamname });
     }
