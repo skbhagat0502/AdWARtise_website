@@ -638,7 +638,7 @@ https://templatemo.com/tm-538-digital-trend
      RESPONSIVE STYLES              
   -----------------------------------------*/
 
-  @media screen and (max-width: 360px) {
+  @media screen and (min-width: 320px) {
     .logo1{
       height: 65px;
       width: auto;
