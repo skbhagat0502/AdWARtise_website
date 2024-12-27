@@ -121,7 +121,7 @@ app.post(
   catchAsync(async (req, res) => {
     console.log(req.body);
     const answer = new Answer();
-    for (i = 0; i < 15; i++) {
+    for (i = 0; i < 20; i++) {
       answer.answers.push(req.body.answer[i]);
     }
     answer.time = req.body.time;
@@ -132,10 +132,16 @@ app.post(
     // check.author = req.user._id;
     // check.endTime= Date.now();
     await answer.save();
-    res.redirect("/logout");
+    res.redirect("/thanks");
   })
 );
 
+app.get("/live", isLoggedIn, (req, res) => {
+  res.render("addwartise/live");
+});
+app.get("/thanks", (req, res) => {
+  res.render("addwartise/thanks");
+});
 // app.get('/', (req, res) => {
 //     res.render('home')
 // });
