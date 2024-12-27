@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdWARtise</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="css/templatemo-digital-trend.css" />
+    <link rel="stylesheet" href="css/live.css" />
+  </head>
+
+  <body>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <img
+        class="logo"
+        src="../images/bitlogo.png"
+        style="height: 68px; width: 55px; margin-right: 4px"
+        alt=""
+      />
+      <img
+        class="logo"
+        src="../images/Clogo.png"
+        style="height: 60px; width: 60px"
+        alt=""
+      />
+      <div class="container">
+        <!-- <img src="/images/Clogo.png" alt="" style="height: 200px;"> -->
+        <a class="navbar-brand" href="#">
+          <!-- <img src="/images/Clogo.png" alt=""> -->
+          <!-- <i class="fa fa-line-chart"></i> -->
+          <!-- <img src="/images/Clogo.png" alt=""> -->
+          Model Club
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link smoothScroll">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/#about" class="nav-link smoothScroll">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Hunt-Down</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link contact">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="content">
+        <p>Website is Under Maintenance</p>
+        <h1>We're <span>Launching</span> Soon</h1>
+        <div class="launch-time">
+          <!-- <div>
+            <p id="days">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+          </div> -->
+          <div
+            id="timer"
+            style="font-size: 60px; margin-bottom: 2rem; color: #000"
+          >
+            00:00:00:00
+          </div>
+        </div>
+        <button type="button" onclick="starttest()">Start</button>
+      </div>
+      <div id="live-section">
+        <p id="live-status">Website is <span>Live</span>!</p>
+        <div id="live-timer">00:00:00</div>
+      </div>
+      <img src="./images/rb_1184.png" class="rocket" />
+    </div>
+    <script>
+      const countDownDate = new Date("Dec 27, 2024, 01:30:00").getTime();
+      const oneHour = 60 * 60 * 1000; // 1 hour in milliseconds
+
+      function startCountdown() {
+        const intervalId = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+
+          if (distance < 0) {
+            // Countdown complete
+            clearInterval(intervalId);
+            document.getElementById("status").style.display = "none";
+            document.getElementById("countdown-timer").style.display = "none";
+            document.getElementById("live-section").style.display = "block"; // Show live section
+            startOneHourLiveTimer(); // Start live timer for 1 hour
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("countdown-timer").innerHTML = `${days
+            .toString()
+            .padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+        }, 1000);
+      }
+
+      function startOneHourLiveTimer() {
+        const endTime = new Date().getTime() + oneHour;
+
+        const liveIntervalId = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = endTime - now;
+
+          if (distance < 0) {
+            // End of live timer
+            clearInterval(liveIntervalId);
+            document.getElementById("live-status").innerHTML =
+              "Error: The session has expired.";
+            document.getElementById("live-timer").innerHTML = "--:--:--";
+            return;
+          }
+
+          const hours = Math.floor(distance / (1000 * 60 * 60));
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("live-timer").innerHTML = `${hours
+            .toString()
+            .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
+            .toString()
+            .padStart(2, "0")}`;
+        }, 1000);
+      }
+
+      function starttest() {
+        const now = new Date().getTime();
+        if (now >= countDownDate) {
+          window.location.href = "/answer";
+        }
+      }
+
+      startCountdown();
+    </script>
+  </body>
+</html>

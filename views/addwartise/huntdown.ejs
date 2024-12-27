@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>AdWARtise</title>
-  <!--
+  <head>
+    <title>AdWARtise</title>
+    <!--
 DIGITAL TREND
 https://templatemo.com/tm-538-digital-trend
 -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
 
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/aos.css">
-  <link rel="stylesheet" href="./css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="./css/templatemo-digital-trend.css">
-  <link rel="stylesheet" href="./css/hunt.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/templatemo-digital-trend.css" />
+    <link rel="stylesheet" href="./css/hunt.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg position-absolute">
+      <img class="logo1" src="../images/bitlogo.png" alt="" />
+      <img class="logo2" src="../images/Clogo.png" alt="" />
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <!-- <i class="fa fa-line-chart"></i> -->
+          Model Club
+        </a>
 
-<body>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- MENU BAR -->
-  <nav class="navbar navbar-expand-lg position-absolute">
-    <img class="logo1" src="../images/bitlogo.png" alt="">
-    <img class="logo2" src="../images/Clogo.png" alt="">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <!-- <i class="fa fa-line-chart"></i> -->
-        Model Club
-      </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="/#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link contact"><%= teamname %></a>
-       </li>
-          <!-- <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link contact"><%= teamname %></a>
+            </li>
+            <!-- <li class="nav-item">
             <a href="contact.html" class="nav-link contact">Contact</a>
           </li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- BLOG -->
-  <section class="blog section-padding">
-   
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-12 col-12 py-5 mt-5 mb-3 text-center">
-
-          <h1 class="mb-4" id="hunt" data-aos="fade-up">Hunt-<span style="color: #f19011;">Down</span>
-          </h1>
-          <!-- <h2 class="mb-4" data-aos="fade-up">Hunt-Down</h2> -->
+          </ul>
         </div>
+      </div>
+    </nav>
+    <div
+      style="
+        background-color: black;
+        width: 12rem;
+        height: 7rem;
+        color: white;
+        right: 40%;
+        top: 18%;
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+      "
+    >
+      <p id="countdown" style="font-size: 3rem; color: #fff">15:00</p>
+    </div>
 
-        <div id="lottie1" style="max-width: 550px; height: auto; min-width: 100px; position: relative; bottom: 50px;"
-          class="col-lg-7 col-md-7 col-12 mb-4">
-          <!-- <div class="blog-header" data-aos="fade-up" data-aos-delay="100">
+    <!-- BLOG -->
+    <section class="blog section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12 py-5 mt-5 mb-3 text-center">
+            <h1 class="mb-4" id="hunt" data-aos="fade-up">
+              Hunt-<span style="color: #f19011">Down</span>
+            </h1>
+            <!-- <h2 class="mb-4" data-aos="fade-up">Hunt-Down</h2> -->
+          </div>
+
+          <div
+            id="lottie1"
+            style="
+              max-width: 550px;
+              height: auto;
+              min-width: 100px;
+              position: relative;
+              bottom: 50px;
+            "
+            class="col-lg-7 col-md-7 col-12 mb-4"
+          >
+            <!-- <div class="blog-header" data-aos="fade-up" data-aos-delay="100">
                         <img src="images/blog/blog-header-image.jpg" class="img-fluid" alt="blog header">
 
                         <div class="blog-header-info">
@@ -90,47 +123,58 @@ https://templatemo.com/tm-538-digital-trend
                           <h3><a href="blog-detail.html">The Key to Creative Work is Knowing When to Walk Away</a></h3>
                         </div>
                       </div> -->
+          </div>
 
-        </div>
+          <div class="col-lg-6 col-md-5 col-12 mb-4">
+            <h2>Rules for this round-</h2>
+            <div
+              class="blog-sidebar d-flex py-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <!-- <img src="images/blog/blog-sidebar-image.jpg" class="img-fluid" alt="blog"> -->
 
-        <div class="col-lg-6 col-md-5 col-12 mb-4">
-          <h2>Rules for this round-</h2>
-          <div class="blog-sidebar d-flex py-4" data-aos="fade-up"
-            data-aos-delay="200">
-            <!-- <img src="images/blog/blog-sidebar-image.jpg" class="img-fluid" alt="blog"> -->
+              <div class="blog-info">
+                <h4 class="blog-category">
+                  1. This section contains 20 questions.
+                </h4>
+              </div>
+            </div>
 
-            <div class="blog-info">
-              <h4 class="blog-category">1.  This section contains 15 questions.</h4>
+            <div
+              class="blog-sidebar py-4 d-flex justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <!-- <img src="images/blog/blog-sidebar-image01.jpg" class="img-fluid" alt="blog"> -->
 
-            
+              <div class="blog-info">
+                <h4 class="blog-category">
+                  2. A total of one hour will be provided to submit the answers.
+                </h4>
+
+                <!-- <h3><a href="blog-detail.html">Be Humble About What You Know</a></h3> -->
+              </div>
+            </div>
+
+            <div
+              class="blog-sidebar py-4 d-flex justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <!-- <img src="images/blog/blog-sidebar-image02.jpg" class="img-fluid" alt="blog"> -->
+
+              <div class="blog-info">
+                <h4 class="blog-category">
+                  3. Hover over the cards to answer the questions.
+                </h4>
+
+                <!-- <h3><a href="blog-detail.html">The Mistakes I Made As a Coding Beginner</a></h3> -->
+              </div>
             </div>
           </div>
 
-          <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos="fade-up"
-            data-aos-delay="150">
-            <!-- <img src="images/blog/blog-sidebar-image01.jpg" class="img-fluid" alt="blog"> -->
-
-            <div class="blog-info">
-              <h4 class="blog-category">2.  A total of one hour will be provided to submit the answers.</h4>
-
-              <!-- <h3><a href="blog-detail.html">Be Humble About What You Know</a></h3> -->
-            </div>
-          </div>
-
-          <div class="blog-sidebar py-4 d-flex justify-content-center align-items-center" data-aos="fade-up"
-            data-aos-delay="150">
-            <!-- <img src="images/blog/blog-sidebar-image02.jpg" class="img-fluid" alt="blog"> -->
-
-            <div class="blog-info">
-              <h4 class="blog-category">3.  Hover over the cards to answer the questions.</h4>
-
-              <!-- <h3><a href="blog-detail.html">The Mistakes I Made As a Coding Beginner</a></h3> -->
-            </div>
-          </div>
-
-        </div>
-
-        <!-- <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
+          <!-- <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
 
                       <img src="images/newsletter.png" data-aos="fade-up" data-aos-delay="100" class="img-fluid" alt="newsletter">
                     </div>
@@ -157,506 +201,980 @@ https://templatemo.com/tm-538-digital-trend
                         <button type="submit" data-aos="fade-up" data-aos-delay="500" class="btn w-100 mt-3">Sign up</button>
                       </form>
                     </div> -->
-
+        </div>
       </div>
-    </div>
-  </section>
-<h1 style="text-align: center;">BUCKLE UP!</h1>
-  <section>
-    <form action="/answer" method="post">
-    <div class="cards">
+    </section>
+    <h1 style="text-align: center">BUCKLE UP!</h1>
+    <section>
+      <form id="testForm" action="/answer" method="post">
+        <div class="cards">
+          <div class="container2">
+            <div class="row">
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 01</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This tech giant started in a garage and was co-founded
+                        by a visionary known for his iconic turtleneck and
+                        revolutionary products. One of its first computers was
+                        named after a fruit.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
 
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[0]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 02</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This company started as an online bookstore and is now
+                        among the largest e-commerce platforms in the world. Its
+                        founder also owns a space exploration company called
+                        Blue Origin.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
 
-      <div class="container2">
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[1]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 03</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/3.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This search engine giant was initially called "BackRub"
+                        and is known for its parent company, Alphabet Inc. It
+                        also owns the most popular video streaming platform in
+                        the world.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
 
-        <div class="row">
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[2]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 01</h2>
-                  <img class="profile" width="100%"
-                    src="../images/4.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>This is a beverage company. Initially, it was sold at the pharmacies as a fountain drink. It was also one of the associate sponsors of Delhi Daredevils in the year 2008.</h3>
-                  <!-- <img class="tem-img"
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 04</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This Indian fintech company gained massive popularity
+                        post-demonetization and is known for its slogan, "Paytm
+                        Karo." It started as a mobile recharge platform.
+                      </h3>
+                      <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
                   <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[0]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 02</h2>
-                  <img class="profile" width="100%"
-                    src="../images/2.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>BBK electronics has been the parent company of this brand. The founder of NOTHING is also the co-founder of this brand.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[1]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 03</h2>
-                  <img class="profile" width="100%"
-                    src="../images/3.jpg"
-                    alt="Neymar">
-                 
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>This brand is known for its unique advertisements which entertained everyone during the pandemic. It is a credit card bill payment platform that rewards its members for clearing their credit card bills on time.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[2]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
 
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[3]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 05</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This bank was the first in India to introduce internet
+                        banking and is known for its popular ad campaigns like
+                        "Hum Hain Na." It also sponsors various cricket events
+                        in India.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
 
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[4]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 06</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/3.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This brand is known for promoting real beauty and
+                        self-care. It gained recognition for its "Real Beauty"
+                        campaign and sells a wide range of skincare products.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
 
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 04</h2>
-                  <img class="profile" width="100%"
-                    src="../images/2.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>This brand shares its name with the name of the home planet of the famous villain “THANOS” from the MARVEL franchise.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[3]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[5]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                    </div>
                   </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 05</h2>
-                  <img class="profile" width="100%"
-                    src="../images/4.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>Two famous brands come from the same family in Germany. Originally known as RUDA, its present name is the same as the common name of the species COUGAR.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[4]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 06</h2>
-                  <img class="profile" width="100%"
-                    src="../images/3.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>This brand was originally started as a competitor to “BLOCKBUSTER VIDEO” as a home delivery service for cassettes and CDs.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[5]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 07</h2>
-                  <img class="profile" width="100%"
-                    src="../images/4.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                 
-                  <h3>This is a popular social media app which is used by people to share their opinions publicly. This brand has recently appointed a new CEO of Indian origin.</h3>
-                  <!-- <img class="tem-img"
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 07</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This sports brand's logo is called the "Swoosh," and it
+                        sponsors some of the greatest athletes in the world. Its
+                        slogan, "Just Do It," is one of the most famous in
+                        advertising history.
+                      </h3>
+                      <!-- <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
                   &nbsp;
                   <img class="tem-img"
                     src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
                   <br> -->
-                 
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[6]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 08</h2>
-                  <img class="profile" width="100%"
-                    src="../images/2.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>This brand was the title sponsor of the Indian Premier league for the 2020 edition. Its tagline is "Team hai to maza hai".</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[7]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 09</h2>
-                  <img class="profile" width="100%"
-                    src="../images/3.jpg"
-                    alt="Neymar">
-                   
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>The brand name comes from the Sanskrit term 'Nayaka,' which means 'one who is in the spotlight.' It is one of the leading brands in women's fashion.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[8]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 10</h2>
-                  <img class="profile" width="100%"
-                    src="../images/3.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                 
-                  <h3>Initially called as FOODIEBAY, recently it had a great response for its Initial Public Offering (IPO). Name the brand.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[9]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 11</h2>
-                  <img class="profile" width="100%"
-                    src="../images/2.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>The brand is a Swedish audio streaming and media services providing company, found in the year 2006. It is infamous for its irritating advertisements.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[10]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 12</h2>
-                  <img class="profile" width="100%"
-                    src="../images/4.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>Guess the brand from the logo.</h3>
-                  <img src="../images/nestle.jpg" style="width: 180px; margin-top: 8px;" alt="">
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                 
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[11]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 13</h2>
-                  <img class="profile" width="100%"
-                  src="../images/2.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  <!-- <h2>Neymar</h2> -->
-                 
-                  <h3>This brand composed a song named as "Chalta rahe" for boosting its sales. Name the brand.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[12]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 14</h2>
-                  <img class="profile" width="100%"
-                    src="../images/4.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                  
-                  <h3>This brand was founded as a proprietary trading firm in 2008 and was formerly known as RKSV Securities.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[13]" placeholder="Type Answer" style="border: 2.5px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column" style="padding-top:40px">
-            <div class="card">
-              <div class="content">
-                <div class="front">
-                  <h2>Question 15</h2>
-                  <img class="profile" width="100%"
-                  src="../images/3.jpg"
-                    alt="Neymar">
-                  
-                </div>
-                <div class="back from-left">
-                 
-                  <h3>The first Indian telecom service provider to achieve CISCO gold certification. It is the third largest mobile operator in the world by subscriber base and has commercial presence in 17 countries. Name the brand.</h3>
-                  <!-- <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
-                  &nbsp;
-                  <img class="tem-img"
-                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
-                  <br> -->
-                  
-                  <div style="margin-top: 2rem;">
-                    <input type="text" name="answer[14]" placeholder="Type Answer" style="border: 4px solid #057a8d; border-radius: 5px; height: 50px; width: 200px;">
-                  </div>
-                  <!-- <ul class="social-icon">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <input type="text" class="disabled mt-4 text-center hidden" name="time" id="time">
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[6]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 08</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This luxury car brand has a logo inspired by a spinning
+                        airplane propeller. It stands for Bayerische Motoren
+                        Werke in German.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
 
-          <!-- <div class="column">
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[7]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 09</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/3.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This streaming platform gained immense popularity with
+                        its exclusive rights to IPL and other live sports
+                        events. It was rebranded after being acquired by a major
+                        global entertainment network.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[8]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 10</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/3.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This food delivery platform started in Bangalore and is
+                        known for its quirky advertisements and lightning-fast
+                        delivery services.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[9]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 11</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This motorcycle brand is known for its iconic Bullet
+                        series and has a cult following. It started as a British
+                        company before being acquired by an Indian firm.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[10]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 12</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This automobile company revolutionized the car industry
+                        with its assembly line production. Its founder is known
+                        as the father of modern automobiles.
+                      </h3>
+                      <img
+                        src="../images/nestle.jpg"
+                        style="width: 180px; margin-top: 8px"
+                        alt=""
+                      />
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[11]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 13</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <!-- <h2>Neymar</h2> -->
+
+                      <h3>
+                        This investment platform makes it easy for beginners to
+                        invest in mutual funds and stocks. Its tagline
+                        emphasizes simplicity: "Investing made easy."
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[12]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 14</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This game is the Indian version of a globally popular
+                        battle royale game. It made a grand comeback after being
+                        banned due to data privacy concerns.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[13]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 15</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/3.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This global coffee chain started in Seattle and is known
+                        for its iconic green logo. Its coffee sizes have unique
+                        names like Tall, Grande, and Venti.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[14]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 4px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 16</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This sportswear brand’s name is derived from its
+                        founder, Adolf Dassler. It is known for its iconic
+                        three-stripe logo and sponsorship of major sports teams.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[13]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 17</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This electric vehicle company is named after a famous
+                        inventor and physicist. Its CEO is known for his
+                        ambitious plans for space exploration and colonizing
+                        Mars.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[13]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 18</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/3.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This dairy brand is known for its witty topical
+                        advertisements and the tagline "The Taste of India." It
+                        played a pivotal role in India’s White Revolution.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[13]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 19</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/2.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This smartphone brand, a sub-brand of Xiaomi, is popular
+                        for offering feature-packed phones at affordable prices.
+                        Its name translates to "Rice" in Chinese.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[13]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column" style="padding-top: 40px">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      <h2>Question 20</h2>
+                      <img
+                        class="profile"
+                        width="100%"
+                        src="../images/4.jpg"
+                        alt="Neymar"
+                      />
+                    </div>
+                    <div class="back from-left">
+                      <h3>
+                        This conglomerate started as a trading company in 1868.
+                        It owns brands like Jaguar Land Rover and Tata Steel and
+                        is credited for its philanthropic contributions.
+                      </h3>
+                      <!-- <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/psg.jpg?raw=true" alt="">
+                  &nbsp;
+                  <img class="tem-img"
+                    src="https://github.com/free-source-code-bd/all-public-resource/blob/main/bra.jpg?raw=true" alt="">
+                  <br> -->
+
+                      <div style="margin-top: 2rem">
+                        <input
+                          type="text"
+                          name="answer[13]"
+                          placeholder="Type Answer"
+                          style="
+                            border: 2.5px solid #057a8d;
+                            border-radius: 5px;
+                            height: 50px;
+                            width: 200px;
+                          "
+                        />
+                      </div>
+                      <!-- <ul class="social-icon">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="disabled mt-4 text-center hidden"
+                name="time"
+                id="time"
+              />
+
+              <!-- <div class="column">
               <div class="card">
                 <div class="content">
                   <div class="front">
@@ -711,92 +1229,134 @@ https://templatemo.com/tm-538-digital-trend
                 </div>
               </div>
             </div> -->
+            </div>
+          </div>
+          <br />
 
+          <!-- <a target="_blank" href="https://insidethediv.com">Find Me</a> -->
+        </div>
+        <div class="col-lg-3 mx-auto col-7">
+          <button
+            type="submit"
+            class="form-control btn btn-primary mb-3 mt-4"
+            id="submit-button"
+            name="submit"
+            onclick="submitform()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-lg-auto text-center col-md-8 col-12">
+            <p class="copyright-text text-white text-center">
+              Copyright &copy; TheModelClub.All rights reserved.
+
+              <!-- <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a> -->
+            </p>
+          </div>
+        </div>
+        <p style="text-align: center; color: white">
+          Designed and Developed by
+        </p>
+        <div
+          class="row"
+          style="
+            color: white;
+            font-size: 1.05rem;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+          "
+        >
+          <div style="padding-right: 5px">
+            <a
+              href="https://www.linkedin.com/in/sakshi-kumari-73aa70207/"
+              style="color: #f19011"
+              >Sakshi Kumari</a
+            >
+          </div>
+          <div style="padding-left: 5px">
+            <a
+              href="https://www.linkedin.com/in/gourav-sonkar-12993a1a5/"
+              style="color: #f19011"
+            >
+              Gourav Sonkar</a
+            >
+          </div>
         </div>
       </div>
-      <br>
-     
-      <!-- <a target="_blank" href="https://insidethediv.com">Find Me</a> -->
-    </div>
-    <div class="col-lg-3 mx-auto col-7">
-      <button
-        type="submit"
-        class="form-control btn btn-primary mb-3 mt-4"
-        id="submit-button"
-        name="submit"
-      >
-        Submit
-      </button>
-    </div>
-  </form>
-  </section>
+    </footer>
 
+    <!-- lottie -->
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.querySelector("#lottie1"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://assets3.lottiefiles.com/packages/lf20_lgk0wqey.json",
+      });
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
+      const startingMinutes = 15;
+      let mintime = startingMinutes * 60; // Use 'time' consistently throughout
+      let timerInterval;
 
+      const countdownEl = document.getElementById("countdown");
 
-        <div class="col-lg-6 mx-lg-auto text-center col-md-8 col-12">
-          <p class="copyright-text text-white text-center">
-            Copyright &copy; TheModelClub.All rights reserved.
+      timerInterval = setInterval(updateCountdown, 1000);
 
-            <!-- <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a> -->
-          </p>
-        </div>
+      function updateCountdown() {
+        const minutes = Math.floor(mintime / 60);
+        let seconds = mintime % 60;
 
+        // Add leading zero for single-digit seconds
+        seconds = seconds < 10 ? "0" + seconds : seconds;
 
+        countdownEl.innerHTML = `${minutes}:${seconds}`;
 
+        if (mintime > 0) {
+          mintime--; // Decrement the remaining time
+        } else {
+          clearInterval(timerInterval); // Stop the timer when it reaches 0
+          autoSubmitTest();
+        }
+      }
+      let testForm = document.querySelector("#testForm");
+      function autoSubmitTest() {
+        console.log("Time is up. Submitting form...");
+        document.getElementById("testForm").submit();
+        window.location.href = "/thanks";
+      }
 
-      </div>
-      <p style="text-align: center; color: white;">Designed and Developed by</p>
-      <div class="row" style="color: white; font-size: 1.05rem; flex-wrap: wrap-reverse; justify-content: center;">
-           
-           <div style="padding-right: 5px;">
-                <a href="https://www.linkedin.com/in/sakshi-kumari-73aa70207/" style="color: #f19011;">Sakshi Kumari</a>
+      function submitform() {
+        HTMLFormElement.prototype.submit.call(testForm);
+        console.log("Time is up. Submitting form...");
+        window.location.href = "/thanks";
+      }
+    </script>
 
-           </div>
-           <div style="padding-left: 5px;">
-                <a href="https://www.linkedin.com/in/gourav-sonkar-12993a1a5/" style="color: #f19011;">  Gourav Sonkar</a>
-
-           </div>
-
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- lottie -->
-  <script>
-
-    var animation = bodymovin.loadAnimation({
-      container: document.querySelector('#lottie1'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: "https://assets3.lottiefiles.com/packages/lf20_lgk0wqey.json"
-    })
-  </script>
-
-  <!-- SCRIPTS -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/aos.js"></script>
-  <script src="./js/owl.carousel.min.js"></script>
-  <script src="./js/custom.js"></script>
-  <script>
-    const clearer = document.querySelector('#submit-button')
-    const time = document.querySelector('#time');
-    var q= 0;
-    time.value=q;
-    let timer = setInterval(()=>{
-      time.value++;
-    },1000);
-    clearer.addEventListener('click',()=>{
-      clearInterval();
-      timer = null;
-    })
-  </script>
-</body>
-
+    <!-- SCRIPTS -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script>
+      const clearer = document.querySelector("#submit-button");
+      const time = document.querySelector("#time");
+      var q = 0;
+      time.value = q;
+      let timer = setInterval(() => {
+        time.value++;
+      }, 9000);
+      clearer.addEventListener("click", () => {
+        clearInterval();
+        timer = null;
+      });
+    </script>
+  </body>
 </html>
